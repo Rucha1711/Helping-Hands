@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Helping Hands - Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Helping Hands</a>
+      <nav class="main-nav">
+        <a href="services.html">Services</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn small">Login</a>
+        <a href="signup.html" class="btn small outline">Sign up</a>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">&#9776;</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Available Service Providers</h1>
+    <div class="filters">
+      <input id="serviceSearch" placeholder="Search providers (name, skill, location)" oninput="filterProviders()" />
+      <select id="filterCategory" onchange="filterProviders()">
+        <option value="">All categories</option>
+        <option>Electrician</option><option>Plumber</option><option>Cleaner</option><option>Tutor</option><option>Babysitter</option>
+      </select>
+    </div>
+
+    <div id="providersList" class="providers-grid">
+      <!-- provider cards populated by JS -->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Helping Hands © 2025 — Built for CS637</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

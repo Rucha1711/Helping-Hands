@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Helping Hands - Admin</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Helping Hands</a>
+      <nav class="main-nav">
+        <a href="services.html">Services</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container admin-page">
+    <h1>Admin Dashboard (Demo)</h1>
+    <div class="grid">
+      <div class="card stat">Total Providers<br/><strong id="statProviders">--</strong></div>
+      <div class="card stat">Total Reviews<br/><strong id="statReviews">--</strong></div>
+      <div class="card stat">Pending Requests<br/><strong id="statPending">--</strong></div>
+    </div>
+
+    <section class="card">
+      <h2>Recent activity</h2>
+      <div id="adminActivity">Loading...</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Helping Hands © 2025 — Built for CS637</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Helping Hands - Reviews</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Helping Hands</a>
+      <nav class="main-nav">
+        <a href="services.html">Services</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>User Reviews</h1>
+    <div id="allReviews" class="reviews-list">
+      <!-- reviews inserted by JS -->
+    </div>
+
+    <div class="card review-form">
+      <h3>Leave a review</h3>
+      <form onsubmit="submitReview(event)">
+        <input id="revName" placeholder="Your name" required />
+        <select id="revRating">
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Poor</option>
+          <option value="1">1 - Terrible</option>
+        </select>
+        <textarea id="revText" rows="4" placeholder="Write your review..." required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Helping Hands © 2025 — Built for CS637</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
